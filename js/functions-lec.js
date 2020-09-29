@@ -1,31 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>JS W/ HTML</title>
-    <style>
-        body{
-            font-family: 'Open Sans', sans-serif;
-        }
-        .container{
-            width: 80%;
-            margin: auto;
-        }
-        ul {
-            list-style-type: circle;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <h1>JAVASCRIPT Functions</h1>
-</div>
-<script>
-    "use strict";
+(function(){
+    "use strict"
     /* **************************************
               Function Examples
      ****************************************/
@@ -36,7 +10,7 @@
     function subtract(x, y){
         //console.log(x - y);
         return x - y;
-}
+    }
     // What we pass into these function calls are 'arguments'
     console.log (sum);
     console.log (add(1,2));
@@ -65,7 +39,7 @@
     /* **************************************
               Global & Local Variables
      ****************************************/
-   //these are global variables to our JS file
+    //these are global variables to our JS file
     var name = "Sophie";
     var day = "Monday";
     function tellSophie(){
@@ -92,6 +66,4 @@
                       IIFE
      ****************************************/
     //TODO: Refactor all JS to be linked externally, and wrap all code in an IIFE.
-</script>
-</body>
-</html>
+})();
