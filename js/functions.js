@@ -13,7 +13,7 @@
         function sayHello(name){
             return "Hello, " + name;
         }
-        console.log(sayHello("Ethan"));
+
     /**
      * TODO:
      * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -21,16 +21,16 @@
      *
      * console.log 'helloMessage' to check your work
      */
-       // var helloMessage = sayHello(name:"Ethan")
-      // console.log(helloMessage);
+       var helloMessage = sayHello(name:"Ethan")
+       console.log(helloMessage);
     /**
      * TODO:
      * Store your name as a string in a variable named 'myName', and pass that
      * variable to the 'sayHello' function. You should see the same output in the
      * console.
      */
-    // var myName = "Ethan"
-    // function sayHello()
+     var myName = "Ethan"
+        console.log(sayHello(myName));
 
 
     // Don't modify the following line, it generates a random number between 1 and 3
@@ -57,7 +57,7 @@
     function isTwo(x) {
         return x === 2;
     }
-    console.log(isTwo(random))
+    console.log(isTwo(random));
     /**
      * TODO:
      * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -85,10 +85,11 @@
      * then display the dollar amount they should tip
      */
 
-     var bill= prompt("What was the total bill amount?");
-     var tip = prompt("What percentage would you like to tip?")
-
-    alert("Your total, including the tip is $" + bill * (tip/100).toFixed(2));
+     var billTotal= Number(prompt("What was the total bill amount?"));
+     var tip = Number(prompt("How much would you like to tip? Enter a number from 1-100."));
+    var tipPercentage = tip/100;
+    var tipDollars = calculateTip(tipPercentage,billTotal).toFixed(2)
+    alert("You will need to tip $" + tipDollars);
 
     /**
      * TODO:
@@ -104,5 +105,11 @@
      *
      * > applyDiscount(45.99, 0.12) // 40.4712
      */
+    function applyDiscount(originalPrice,discountPercent){
+        var discountAmount = originalPrice * discountPercent;
+        return (originalPrice - discountAmount).toFixed(2);
+    }
+
+
 
 })();
