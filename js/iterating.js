@@ -57,7 +57,7 @@
 
 var first = ["1",2,3,4,5]
     function first(arrayNumbers){
-        return arrayNumbers[0]];
+        return arrayNumbers[0];
     }
 
 function second(x){
