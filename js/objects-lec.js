@@ -32,7 +32,7 @@ console.log("Welcome to Intro to Objects!");
  * TODO TOGETHER: Create a new variable (of type Object) and call it 'myPhone'. Use either the constructor or Object literal notation.
  */
 
-// var myPhone = new.bject();
+// var myPhone = newObject();
 // var myPhone = newObject();
 // myPhone.color = "black";
 // myPhone.model = "Iphone X";

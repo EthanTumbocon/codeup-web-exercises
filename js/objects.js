@@ -13,7 +13,7 @@
      */
     var person = {
         firstName: "Ethan",
-        lastName: "Tumbocon",
+        lastName: " Tumbocon",
     };
     console.log(person.firstName);
     console.log(person.lastName);
@@ -28,10 +28,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    person.call = function(){
-        console.log("Hello from " + person.firstName + person.lastName);
+    person.sayHello = function(){
+        console.log("Hello from " + person.firstName + " " + person.lastName);
 };
-    person.call()
+    person.sayHello()
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -46,11 +46,33 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron',
+            amount: 180
+        },
+        {name: 'Ryan',
+            amount: 250
+        },
+        {name: 'George',
+            amount: 320
+        }
+    ];
+
+    shoppers.forEach(function(shopper){
+        var initialAmount = shopper.amount;
+        var discount = shopper.amount * .12;
+        var finalAmount = intialAmount - discount;
+
+        //check for customers who spent over $200
+
+        if(initialAmount > 200){
+            console.log(shopper.name + "spent" + initialAmount + ". They get a discount of " + discount + "the total " + "paid was" + finalAmount);
+        } else{
+            console.log(shopper.name + "paid" + initialAmount);
+        }
+    });
+//split up into vars for best practice lol
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -64,6 +86,53 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    // make sure to take word problems line by line!!!!!!!!!!!!
+    var books = [
+        {
+            title: "The Goblet of Fire",
+            author: {
+                firstName: "J.K",
+                lastName: "Rowling"
+            }
+        },
+        {
+            title: "The Hunger Games",
+            author: {
+                firstName:"Suzanne",
+                lastName: "Collins"
+            }
+        },
+        {
+            title: "The Maze Runner",
+            author: {
+                firstName: "James ",
+                lastName: "Dashner"
+            }
+        },
+        {
+            title: "The Great Gatsby",
+            author: {
+                firstName: "F.Scott",
+                lastName: "Fitzgerald"
+            }
+        },
+        {
+            title: "To Kill a Mockingbird",
+            author:{
+                firstName: "Harper",
+                lastName: "Lee"
+            }
+        }
+];
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
+    console.log(books[2].title);
+    console.log(books[2].author.firstName);
+    console.log(books[2].author.lastName);
+    console.log(books[2].title);
+
+
+
 
     /**
      * TODO:
@@ -89,6 +158,14 @@
      *      ---
      *      ...
      */
+    books.forEach(function(book ,i) {
+        var output = "";
+        output += "Book #" + (i + 1) + "\n";
+        output += "Title:" + book.title + "\n";
+        output += "Author" + book.author.firstName + " " + book.author.lastName + "\n";
+        output += "---";
+        console.log(output);
+    });
 
     /**
      * Bonus:
@@ -100,5 +177,24 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+function createBook(title, first, last){
+    return {
+        title: "Hello Ethan",
+        author: {
+            firstName: "ethan",
+            lastName: "T"
+        }
+    };
+}
+    books.push(createBook("Hello Ethan", "Ethan", "T"));
+
+function showBookInfo(book, i) {
+    var output = "";
+    output += "Book #" + (i + 1) + "\n";
+    output += "Title:" + book.title + "\n";
+    output += "Author" + book.author.firstName + " " + book.author.lastName + "\n";
+    output += "---";
+    console.log(output);
+};
 
 })();
