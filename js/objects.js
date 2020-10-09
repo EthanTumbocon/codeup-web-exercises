@@ -177,24 +177,24 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-function createBook(title, first, last){
-    return {
-        title: "Hello Ethan",
-        author: {
-            firstName: "ethan",
-            lastName: "T"
-        }
-    };
-}
-    books.push(createBook("Hello Ethan", "Ethan", "T"));
-
-function showBookInfo(book, i) {
-    var output = "";
-    output += "Book #" + (i + 1) + "\n";
-    output += "Title:" + book.title + "\n";
-    output += "Author" + book.author.firstName + " " + book.author.lastName + "\n";
-    output += "---";
-    console.log(output);
-};
+// function createBook(title, first, last){
+//     return {
+//         title: "Hello Ethan",
+//          author: {
+//             firstName: "ethan",
+//             lastName: "T"
+//         }
+//     };
+// }
+//     books.push(createBook("Hello Ethan", "Ethan", "T"));
+//
+// function showBookInfo(book, i) {
+//     var output = "";
+//     output += "Book #" + (i + 1) + "\n";
+//     output += "Title:" + book.title + "\n";
+//     output += "Author" + book.author.firstName + " " + book.author.lastName + "\n";
+//     output += "---";
+//     console.log(output);
+// };
 
 })();
