@@ -274,10 +274,22 @@ console.log(lastQuote[0].author);
 
 //TODO: Without using a loop, log the first 5 quotes and their author in the format quote + "-author"
 //Example: "build something 100 people love, not something 1 million people kind of like -Brian Chesky"
+console.log( "Just keep pushing... even with life-mud in your eyes, and a major lack of understanding when it comes to the effect your efforts even have... it may pay off in ways you didn’t see coming (cause I mean, no one can really see that well through life-mud). If you just keep moving, the void has a much harder time swallowing you whole. You have the higher ground..." + "-Hailey Koehler"
+)
+console.log("Whether if you think you can... or if you think you can.. you're right!" + "-Henry Ford")
+console.log("Promise me you'll always remember: you're braver than you believe, and stronger than you seem, and smarter than you think" + "-Winnie the Pooh")
+console.log("Let's refine the problem statement" + "-Zach Gulde")
+console.log("UPDATE is a code smell" + "-Zach Gulde")
+
+
 
 //TODO: After doing this 'manually' why is a loop more beneficial?
+// you wont have to console.log every quote, we can just run through the loop and the code will turn out more clean.
+
 
 //TODO: Write a function named 'formatQuote' that accepts an aphorism object and returns a string containing the quote and author in the format "quote" + "-author"
+function formatQuote = (combinedQuote)
+
 /*
 *Example Input:
 *     {
@@ -288,6 +300,7 @@ console.log(lastQuote[0].author);
 **/
 
 //TODO: Write a function named getRandomQuote, that accepts the aphorisms array, and returns a string that contains a random quote and author in the format "quote" + "-author".
+
 
 //TODO: Write a function named fiveRandomQuotes, that accepts the aphorisms array and returns an array of five random quotes and authors in the format "quote" + "-author".
 
