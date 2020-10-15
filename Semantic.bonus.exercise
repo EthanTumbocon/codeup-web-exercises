@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang = eng>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semantic Bonus</title>
+    </head>
+<body>
+<header>
+	<section>
+		<p>Home</p>
+		<p>About</p>
+		<p>Contact Us</p>
+		<p>Donate</p>
+	</section>
+		<h1>Interesting Animals</h1>
+		<p>The Strange and Wonderful Topics Concerning Our Furry Friends</p>
+</header>
+	<main>
+		<br>
+			<h2>The Life of Aardvarks</h2>
+			<br>
+				<h3>Eating Habits</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magnam id est laborum.
+				</p>			
+			</main>
+			<article>
+				<h3>Movement</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt u.
+				</p>			
+			</article>
+			<br>
+				<h3>Sleeping Habits</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip.
+				</p>			
+			</br>
+		</div>
+		<section>
+			<h2>Capybara Sculpture</h2>
+			<div>
+				<h3>Polymorphs</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magnam id est laborum.
+				</p>			
+		</section>
+			<div>
+				<h3>Radial Matrix Patterns</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt u.
+				</p>			
+			</div>
+			<section>
+				<h3>Cross Paragonal Structures</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip.
+				</p>			
+			</div>
+		</main>
+	<br>
+		<p>Copyright 2017</p>
+</body>
+</html>
