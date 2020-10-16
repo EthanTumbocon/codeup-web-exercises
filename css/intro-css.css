@@ -1,8 +1,41 @@
-.fancy-header{
+/*.fancy-header{*/
+/*    color: purple;*/
+/*    text-decoration: underline;*/
+/*}*/
+/*h3{*/
+/*    color: gold;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Order of Declaration */
+*#bar {
+    color: green;
+}
+
+*[id="bar"] {
     color: purple;
-    text-decoration: underline;
 }
-h3{
-    color: gold;
-    text-decoration: underline;
+/*the []'s in *[id="bar"] turn it into an attribute selector which is used to select elements with a bar attribute */
+/*ID selector has a higher specificity in this case, since the selector *[id="bar"] counts as an attribute selector, even when they match the same element, that is why it prints out as green not purple. */
+
+body h1 {
+    color: green;
 }
+
+html h1 {
+    color: purple;
+}
+/*these two declarations have equal selector types, in that case whichever selector is declared last is the one that takes precedence. prints purple*/
+
+/*inline styling is most commonly used to style a single line instead of multiple lines. Not recommended especially if you are using an external style sheet already.*/
