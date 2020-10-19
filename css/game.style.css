@@ -13,7 +13,7 @@
     background-color: red;
     position: relative;
     top: 150px;
-    animation: jump 500ms infinite;
+    /*animation: jump 500ms infinite;*/
 }
 .animate{
     animation: jump 500ms;
@@ -29,9 +29,9 @@
     height: 20px;
     background-color: blue;
     position: relative;
-    top: 30px;
+    top: 100px;
     left:480px;
-    animation:block 1s infinite linear;
+    /*animation:block 1s infinite linear;*/
 }
 
 @keyframes block{
