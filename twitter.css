@@ -19,8 +19,8 @@ body, html {
 header {
     background-image: url("https://picsum.photos/1200/300");
     background-size: cover;
-    min-height: 300px;
-    padding-top: 275px;
+    min-height: 220px;
+    padding-top: 200px;
 }
 a {
     color: var(--link-color);
@@ -28,29 +28,78 @@ a {
 .top-nav {
     background: var(--light-bg);
     padding: 1.5em;
-    display: inline-block;
     width: 100%;
+    height: 10%;
+    position: fixed;
+    display: inline-block;
+    z-index: 100
+}
+.nav-item{
+    display: inline-block;
+    padding: 1.5em;
+}
+.nav li{
+    display: inline-block;
 }
 .nav {
     list-style-type: none;
-    padding: 1.5em;
     margin: 0;
     display: inline-block;
 }
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
-    text-decoration: none;
-    padding: 1.5em;
-    display: inline-block;
 }
 .nav-link:hover {
     color: var(--link-color);
-    padding: 1.5em;
     display: inline-block;
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
+}
+.profile-form{
+    float: right;
+    line-height: 80px;
+}
+.container{
+    margin: 2em;
+    display: flex;
+}
+.profile-image{
+    top: 135px;
+    position: absolute;
+}
+.profile-details{
+    width: 25%;
+    margin: 0 .5em 0 .5em;
+    calc(25% - 1em );
+}
+.timeline{
+    width: 50%;
+    margin: 0 .5em 0 .5em;
+    calc(50% - 1em )
+}
+.who-to-follow{
+    width: 25%;
+    margin: 0 .5em 0 .5em;
+    calc(25% - 1em );
+}
+.media{
+    background-color: var(--light-bg);
+    border: 1px var(--separator-color);
+    calc(100% -1em);
+    overflow: auto;
+}
+.media-image{
+    max-width: 50px;
+    margin-top: 1.33em;
+    float: left;
+}
+.media-body{
+    width: 100%;
+    float: left;
+    calc(100% - 50px)
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -63,6 +112,7 @@ a {
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
+    ;
 }
 .img-circle {
     border-radius: 100%;
