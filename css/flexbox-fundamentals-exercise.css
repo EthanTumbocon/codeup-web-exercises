@@ -17,7 +17,6 @@ h2, h3 {
 .container {
     margin: 0 auto;
     width: 80%;
-
 }
 
 .green-box {
@@ -42,6 +41,7 @@ h2, h3 {
 
 section {
     /* enter needed declarations here */
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
