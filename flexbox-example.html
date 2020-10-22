@@ -3,33 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Flexbox Basics Examples</title>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
         body {
             margin: 0;
-            font-family: Helvetica;
-            font-weight: bold;
+            font-family: "Roboto Light";
+            background: orange;
         }
-        .flex-container {
-            width: 100%;
-            border: 3px solid goldenrod;
+        h1, h2, h3 {
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
-        .flex-item {
-            background: #BFD45D;
-            border: 2px solid #F9EFD6;
+        h3 {
+            color: grey;
+        }
+        hr {
+            border-top: 1px solid whitesmoke;
+            width: 90px;
+        }
+        .card {
+            margin: .5em;
+            border-radius: 2px;
+            background: white;
+            width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        img {
+            border-radius: 120px;
+            width: 120px;
+        }
+        i {
+            color: grey;
+        }
+        .text-section {
+            position: relative;
+            bottom: 1.5em;
+        }
+        .icons i {
+            font-size: 2.2em;
+        }
+        .icons{
+            display: flex;
+            width: 8em;
+        }
+        header, main {
+            width: 80%;
+            max-width: 1300px;
+            margin: 0 auto;
             padding: 1em;
+            background: darkorange;
         }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
     </style>
 </head>
 <body>
-
-<div class="flex-container">
-    <div class="flex-item">Item 1</div>
-    <div class="flex-item">Item 2</div>
-    <div class="flex-item">Item 3</div>
-</div>
-
+<header>
+    <h1>STAFF</h1>
+</header>
+    <article class="card">
+        <section>
+            <img src="img/profile-pic.png" alt="profile-image" >
+        </section>
+        <section class="text-section">
+            <h2>Ron Swanson</h2>
+            <h3>Director</h3>
+            <hr>
+        </section>
+        <section class="icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </section>
+</article>
 </body>
 </html>
