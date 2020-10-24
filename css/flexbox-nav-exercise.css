@@ -7,12 +7,16 @@ body {
 }
 nav {
     background: #333333;
+    height: 4.5em;
 }
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
 }
 
 nav a {
@@ -26,9 +30,14 @@ nav a {
 nav a:hover {
     background: blue;
 }
-nav ul li:nth-child(4) {
+nav ul li:nth-child(6) {
+    margin-left: auto;
     /*
         this allows the last flex item to be right justified
         by filling remaining space to the left of the flex item with margin
     */
+}
+nav ul li:nth-child(5){
+    margin: 0;
+    font-size: 3em;
 }
