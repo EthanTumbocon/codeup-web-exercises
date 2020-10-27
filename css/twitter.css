@@ -27,27 +27,19 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-    padding: 1.5em;
-    display: inline-block;
-    width: 100%;
 }
 .nav {
     list-style-type: none;
-    padding: 1.5em;
+    padding: 0;
     margin: 0;
-    display: inline-block;
 }
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
     text-decoration: none;
-    padding: 1.5em;
-    display: inline-block;
 }
 .nav-link:hover {
     color: var(--link-color);
-    padding: 1.5em;
-    display: inline-block;
 }
 .profile {
     background: var(--light-bg);
