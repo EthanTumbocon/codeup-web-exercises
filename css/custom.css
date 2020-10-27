@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.jumbotron{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    font-weight: bold;
+    text-decoration: black;
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+img{
+    width: 100%;
+}
