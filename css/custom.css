@@ -12,10 +12,10 @@ h1{
     top: 40%;
     right: 30%;
     font-weight: bold;
-    text-decoration: black;
+    color: black;
     margin: 30px;
     background-color: #ffffff;
-    opacity: 0.6;
+
 }
 img{
     width: 100%;
