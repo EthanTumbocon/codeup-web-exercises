@@ -116,7 +116,7 @@
         </div>
         <!--TAB PANE 2-->
                 <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">
-                    <div class="card">
+                    <form class="card">
                         <div class="card-header bg-primary text-white ">
                             Choose cheese and sauce
                         </div>
@@ -134,67 +134,70 @@
                                         <option value="cheese-double">Double</option>
                                     </select>
                                 </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input type="radio" name="crust" id="hand-sm">
-                                        <label for="hand-sm">Small (10")</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input type="radio" name="crust" id="hand-md">
-                                        <label for="hand-md">Medium(12")</label>
-                                    </li>
-                                </ul>
                             </div>
                             <div class="card">
                                 <div class="card-header">
                                     Sauce
                                 </div>
-                                <div class="card-body">
-                                    Thin enough for optimum crispy to crunchy ratio
+                                <div class="card-body" border-top>
+                                      <label for="sauce-amt">How much?</label>
+                                     <select name="sauce-amt" class="form-control" id="sauce-amt">
+                                         <option value="sauce-light">Light</option>
+                                         <option value="sauce-normal">Normal</option>
+                                         <option value="sauce-extra">Extra</option>
+                                    </select>
                                 </div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <input type="radio" name="crust" id="thin-med">
-                                        <label for="thin-med">Medium (12")</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input type="radio" name="crust" id="thin-lg">
-                                        <label for="thin-lg">Large(14")</label>
-                                </ul>
+                                <div class="card-body border-top">
+                                    <label for="sauce-type">What type?</label>
+                                    <select name="sauce-type" class="form-control" id="sauce-type">
+                                        <option value="sauce-tomato">Tomato</option>
+                                        <option value="sauce-marinara">Marinara</option>
+                                        <option value="sauce-bbq">BBQ</option>
+                                        <option value="sauce-alfredo">Alfredo</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary float-right"> Next Step</button>
+                    <div class="card-footer" float-right>
+                        <div class="btn-group">
+                            <button class="btn btn-primary">< Previous Step</button>
+                            <button class="btn btn-primary"> Next Step ></button>
+                        </div>
+
                     </div>
                 <!--TAB PANE 3-->
                 <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
                         <div class="card">
                             <div class="card-header bg-primary text-white ">
-                                Choose size and crust
+                                Choose toppings
                             </div>
                             <div class="card-body">
                                 <div class="card">
                                     <div class="card-header">
-                                        Hand Tossed
+                                        Choose Meats
                                     </div>
-                                    <div class="card-body">
-                                        Garlic seasoned crust with a rich, buttery taste.
-                                    </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <input type="radio" name="crust" id="hand-sm">
-                                            <label for="hand-sm">Small (10")</label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <input type="radio" name="crust" id="hand-md">
-                                            <label for="hand-md">Medium(12")</label>
-                                        </li>
-                                    </ul>
+                                  <ul class="list-group">
+                                      <li class="list-group-item" >
+                                          <label for="Beef">Beef</label>
+                                          <input type="checkbox" name="beef" id="beef">
+                                      </li>
+                                      <li class="list-group-item" >
+                                          <label for="Ham">Ham</label>
+                                          <input type="checkbox" name="ham" id="ham">
+                                      </li>
+                                      <li class="list-group-item" >
+                                          <label for="philly">Philly Steak</label>
+                                          <input type="checkbox" name="philly" id="philly">
+                                      </li>
+                                      <li class="list-group-item" >
+                                          <label for="bacon">Bacon</label>
+                                          <input type="checkbox" name="bacon" id="bacon">
+                                      </li>
+                                  </ul>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
-                                        Crispy Thin
+                                        Choose non-Meats
                                     </div>
                                     <div class="card-body">
                                         Thin enough for optimum crispy to crunchy ratio
@@ -215,9 +218,8 @@
                             <button class="btn btn-primary float-right"> Next Step</button>
                         </div>
                  </div>
-            </div>
-        </form>
-</main>
+             </form>
+       </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
