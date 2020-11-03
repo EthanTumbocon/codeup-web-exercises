@@ -30,36 +30,35 @@
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById('main-header');
-        console.log(mainHeader);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
         mainHeader.innerHTML = "JavaScript is Cool"
-        console.log(mainHeader.innerHTML)
+
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById('sub-header');
-        console.log(subHeader);
+
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color = "blue";
 
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.querySelector('ul');
-        console.log(listItems)
+        var listItems = document.getElementsByTagName('li');
+
         // TODO: Set text color on every other list item to grey
-        var listColor = document.getElementsByTagName('li');
-        console.log(listColor);
-        for (var i = 0; i < listColor.length; i+= 2){
-            listColor[i].style.background = "grey"
-        }
         // TODO: Set text color of li with dbid = 1 to blue
-       var textColor= document.getElementById('dbid = "1"');
-        console.log(textColor);
-        textColor.style.color = "blue";
+        for (var i = 0; i < listItems.length; i += 1) {
+            if (listItems[i].getAttribute('data-dbid') === '1'){
+                listItems[i].style.color = 'blue';
+            }
+            if (i % 2 !== 0) {
+                listItems[i].style.color = "grey";
+            }
+        }
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
         console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-
+        subParagraphs[0].innerText = "Mission Accomplished!"
     })();
 </script>
 </body>
