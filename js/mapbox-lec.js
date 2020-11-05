@@ -28,13 +28,13 @@ var map = new mapboxgl.Map(mapOptions);
 /**********************************************
  *                    MARKERS
  *********************************************/
-var markerOptions;
+let markerOptions;
 markerOptions = {
     color: "#f0000",
     draggable: true
 };
 
-var alamoMarker = new mapboxgl.Marker(markerOptions)
+let alamoMarker = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.4861, 29.4260])
     .addTo(map);
 // TODO TOGETHER: Change the color of the marker
