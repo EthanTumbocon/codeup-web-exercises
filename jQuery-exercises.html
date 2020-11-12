@@ -26,9 +26,9 @@
 
 <main class="container">
 
-    <h1 class="codeup">jQuery Selectors Lecture</h1>
+    <h1 id="codeup">jQuery Selectors Lecture</h1>
 
-    <h3 class="codeup">Best Anime Movies</h3>
+    <h3 >Best Anime Movies</h3>
     <ol>
         <li>MHA: Two Heroes</li>
         <li>Demon Slayer Mugen Train</li>
@@ -43,7 +43,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam, blanditiis consequuntur cum cumque delectus, eos et harum illum inventore ipsa laudantium, magni numquam obcaecati sapiente sunt veritatis! Fugiat!
     </p>
 
-    <p id="codeup" class="paragraph">
+    <p class="paragraph">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolor, est expedita hic, inventore ipsa laboriosam laborum laudantium necessitatibus nisi nostrum nulla, omnis pariatur qui quis quo recusandae suscipit unde!
     </p>
 
@@ -75,31 +75,27 @@
 
 
         // class
-        $('codeup').css("border", "1px wide red");
-        // var paragraphs = $('.paragraph');
-        // console.log(paragraphs);
-        //
-        // paragraphs.html('This is a paragraph.');
+        $('h1').click(function(){
+            $(this).css('background', 'red')
+        });
+
+
 
 
         // tag
-        $('p').css('font-size', '20px');
+        $('p').dblclick(function(e){
+            $(e.target).css('font-size, 20px');
+        });
 
-        // var lis = $('ol>li');
-        // console.log(lis);
-
-        // lis.html('Some Film');
-
-        // multiple
-
-        // $('p, h1').html("Test");
-
+        $('li').hover(function (e) {
+            $(e.target).css('color, red');
+        }, function(e) {
+            $(e.target).css('color, black');
+        })
 
         // ===================================== GETTING A VALUE
 
-        /* var element = $("main"); // select tag
-         element.html('hi mom')
-                .html('hi dad');*/
+
 
 
 
@@ -118,11 +114,11 @@
 
 
         // multiple CSS properties
-        $('h1, p, li ')
-        $(document).ready(function(){
-            "use strict";
-            alert("#h1");
-        });
+        // $('h1, p, li ')
+        // $(document).ready(function(){
+        //     "use strict";
+        //     alert("#h1");
+        // });
 
         // $('p').css({
         //     "background-color": "blue",
