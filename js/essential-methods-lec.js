@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('mainHeading').html('Hogwarts');
     });
     // TODO: uncomment the line below
-    alert('mainHeading');
+    // alert('mainHeading');
 
     // TODO TOGETHER: using the css method, grab the current width of the sorting hat img. Console log your results
     console.log($('img').css('width'));
@@ -60,12 +60,19 @@ $(document).ready(function() {
      **********************/
 
     // TODO TOGETHER: When the 'Houses' button is clicked, add the class 'house' to anything with a class of 'house-name'
-
+// $('#highlight-houses').click(function(){
+//     $('.house-name').addClass('house')
+// });
     // TODO TOGETHER: Comment out the code above. Add the class of 'house' to all the 'house-names'
 
     // TODO: Write the event listener to remove the class instead
-
+// $('#highlight-houses').click(function(){
+//     $('.house-name').removeClass('house')
+// });
     // TODO TOGETHER: Refactor your addClass and removeClass methods to toggle the 'house' class instead
+$('#highlight-houses').click(function(){
+    $('.house-name').toggleClass('house')
+});
 
     // This provides the 'Lock In' functionality. Selected my button -> add an event listener
     $('#lock-g').click(function(e){
@@ -92,6 +99,22 @@ $(document).ready(function() {
 
     //TODO TOGETHER: complete the Lock In functionality for Slytherin
     //TODO: Add the Lock In functionality for Ravenclaw and Hufflepuff
+$('#lock-r').click(function(e) {
+    $('#ravenclaw-house').toggleClass('ravenclaw');
+    if($('#ravenclaw-house').hasClass('ravenclaw')){
+        $(this).text('Unlock');
+    }else {
+        $(this).text('Lock In');
+    }
+});
+$('#lock-h').click(function(e) {
+    $('#hufflepuff-house').toggleClass('hufflepuff');
+    if($('#hufflepuff-house').hasClass('hufflepuff')){
+        $(this).text('Unlock');
+    }else {
+        $(this).text('Lock In');
+    }
+});
 
     /**********************************************
      * 			       Traversing
