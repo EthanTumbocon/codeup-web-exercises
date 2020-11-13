@@ -121,10 +121,18 @@ $('#lock-h').click(function(e) {
      *********************************************/
 
     //TODO TOGETHER: Using the each method, highlight every other list item in the Ravenclaw house
-    //TODO TOGETHER: Change the font color of the first list element in Hufflepuff
-    //TODO TOGETHER: Change the font color of the last list element in Slytherin
+$('#ravenclaw').children().each(function(index,element){
+    if(index % 2 !== 0){
+        $(this).css('background-color', 'blue');
+    }
+})
 
+    //TODO TOGETHER: Change the font color of the first list element in Hufflepuff
+$('#hufflepuff').children().first().css('color', 'blue');
+    //TODO TOGETHER: Change the font color of the last list element in Slytherin
+$('#slytherin').children().first().css('color', 'blue');
     //TODO TOGETHER: When the 'Witches' button is clicked, highlight all names that have been assigned the class of 'witches'
+
     $('#highlight-witches').click(function(e){
         $('li').each(function(){
             if($(this).hasClass('witches')){
