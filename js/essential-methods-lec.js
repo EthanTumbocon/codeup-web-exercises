@@ -132,7 +132,6 @@ $('#hufflepuff').children().first().css('color', 'blue');
     //TODO TOGETHER: Change the font color of the last list element in Slytherin
 $('#slytherin').children().first().css('color', 'blue');
     //TODO TOGETHER: When the 'Witches' button is clicked, highlight all names that have been assigned the class of 'witches'
-
     $('#highlight-witches').click(function(e){
         $('li').each(function(){
             if($(this).hasClass('witches')){
