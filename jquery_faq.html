@@ -17,6 +17,21 @@ $(document).ready(function(){
     $('.invisible-dd').toggleClass('invisible')
 
 
+
+$('button').click(function(){
+    $('.last-item').css( "background-color", "yellow" );
+})
+    $('#shiretoko-head').click(function(){
+        $('.change-weight1').next().css('font-weight', 'bold');
+    })
+    $('#akan-head').click(function() {
+        $('.change-weight3').next().css('font-weight', 'bold');
+    });
+    $('#rishiri-head').click(function() {
+        $('.change-weight2').next().css('font-weight', 'bold');
+    });
+
+
 });
 
 
@@ -58,6 +73,33 @@ $(document).ready(function(){
 
 </dl>
 
+    <h3 id='shiretoko-head' class="change-weight1">Shiretoko</h3>
+        <ul id="japan-parks">
+            <li id="invisible-dd" class="invisible"> Shiretoko National Park is one of Japan's most beautiful, unspoiled national parks and a UNESCO World Heritage Site. </li>
+
+            <li>The remote peninsula is home to a high concentration of brown bears which can be viewed from sightseeing boats during the warmer months. </li>
+
+            <li class="last-item">In winter it is one of the few places in Japan where you can see drift ice.</li>
+        </ul>
+
+    <h3 id='rishiri-head' class="change-weight2">Rishiri Rebun Sarobetsu</h3>
+        <ul>
+            <li id="invisible-dd" class="invisible">The northernmost of Japan's National Parks, the Rishiri Rebun Sarobetsu National Park is made up of two small islands, Rishiri and Rebun.
+
+            <li>Part of the coastal area of northern Hokkaido.</li>
+
+            <li class="last-item">The park offers hiking, coastal scenery and a wealth of alpine flowers.</li>
+        </ul>
+    <h3 id='akan-head' class="change-weight3">Akan Mashu</h3>
+        <ul>
+            <li id="invisible-dd" class="invisible">Akan is a popular national park in eastern Hokkaido consisting of three lakes surrounded by volcanoes. </li>
+
+            <li>It is known for its natural scenery, such as Lake Mashu, which is often considered Japan's most beautiful lake.</li>
+
+            <li class="last-item">The park's other volcanic lakes are the vast Lake Kussharo, the largest caldera lake in Japan, and Lake Mashu, said to have some of the clearest waters in the world. </li>
+
+        </ul>
+<button id="national-lake">YELLOW!</button>
 <script
         src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
