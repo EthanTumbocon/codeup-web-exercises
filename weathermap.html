@@ -17,35 +17,11 @@
 <body>
 <script src="js/keys.js"></script>
 <script src="js/jquery-2.2.4.js"></script>
-
+<script src="js/weathermap.js"></script>
+<script src="css/weathermap.css"></script>
+<div id="weather-cards"></div>
 <div id='map' style='width: 1000px; height: 1000px;'></div>
 
 
-<script>
-$(document).ready(function () {
-    "use strict";
-    mapboxgl.accessToken = mapboxToken;
-    let mapOptions = {
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-98.4916, 29.4252],
-        zoom: 10
-
-    }
-    let map = new mapboxgl.Map(mapOptions)
-    reverseGeocode("San Antonio, TX", mapboxToken).then(function(result) {
-        console.log(result);
-        map.setCenter(result);
-        map.setZoom(8);
-    });
-
-    $.get("http://api.openweathermap.org/data/2.5/weather", {
-        APPID: OPEN_WEATHER_APPID,
-        q: "San Antonio, US"
-    }).done(function (data) {
-        console.log(data);
-    });
-});
-</script>
 </body>
 </html>
