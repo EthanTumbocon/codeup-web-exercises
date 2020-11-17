@@ -8,7 +8,7 @@ let mapOptions = {
 }
 let map = new mapboxgl.Map(mapOptions)
 
- var geocode("San Antonio, TX", mapboxToken).then(function(result) {
+  geocode("San Antonio, TX", mapboxToken).then(function(result) {
 	console.log(result);
 	map.setCenter(result);
 	map.setZoom(8);
