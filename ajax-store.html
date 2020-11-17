@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Online Store</title>
+    <script src="ajax-bonus.js"></script>
 </head>
 <body>
 
@@ -25,25 +26,34 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    $.get("./data/inventory.json", {
+    var updateThePage = $.ajax("data/inventory.json")
+    console.log(updateThePage);
 
+    updateThePage.fail(function(jqXhr, status, error){
+        alert("something isn't right hmm")
     });
-    // TODO: Take the data from inventory.json and append it to the products table
+    updateThePage.done(function(inventory){
+        fillTheTable(inventory)
+    });
+    function fillTheTable(inventory){
+        var table = "";
+        inventory.forEach(function(addedToPage){
+            table += "<tr>";
+            table += "<td>" + addedToPage.title + "</td>"
+            table += "<td>" + addedToPage.quantity + "</td>"
+            table += "<td>" + addedToPage.price + "</td>"
+            table += "<td>" + addedToPage.categories + "</td>"
+            table += "<tr>";
+        })
+        $('#insertProducts').html(table);
+    }
 
+
+
+    // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-
-
-
-
-
-
-
-
-
-
-
 })();
 </script>
 

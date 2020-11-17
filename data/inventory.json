@@ -30,6 +30,13 @@
             "tool"
         ],
         "price": 10
-    }
+    }, {
+    "title": "Allen Keys",
+    "quantity": 100,
+    "categories": [
+        "tool"
+    ],
+    "price": 1
+}
 ]
 
