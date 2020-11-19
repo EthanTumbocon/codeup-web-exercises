@@ -146,20 +146,28 @@ const alphabet = ['A', 'B', 'C', 'D', 'E'];
 
 
 //TODO TOGETHER: new way
-
-
-
+// let [a,b,c] = alphabet
+// console.log(a);
+// console.log(b);
+// console.log(c);
 
 
 //TODO TOGETHER: To skip an element...
 
-
-
+// let [a,c, d] = alphabet
+// console.log(a);
+// // console.log(b);
+// console.log(c);
+// console.log(d);
 
 
 //TODO TOGETHER: To get all elements...Spread operator *BONUS
 
-
+// const [a, b ,c...rest] = alphabet
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(rest);
 
 
 
@@ -177,16 +185,16 @@ const alphabet = ['A', 'B', 'C', 'D', 'E'];
 
 
 //new way
-function tellMeAbout({name, age}){
-	console.log(name);
-	console.log(age);
-}
-
-const person = {
-	name: 'codeup',
-	age: 4
-};
-
+// function tellMeAbout({name, age}){
+// 	console.log(name);
+// 	console.log(age);
+// }
+//
+// const person = {
+// 	name: 'codeup',
+// 	age: 4
+// };
+//
 // tellMeAbout(person);
 
 
@@ -207,8 +215,8 @@ let shape2 = {
 	width: 5
 }
 
-// console.log(getArea(shape1)); //100
-// console.log(getArea(shape2)); //25
+console.log(getArea(shape1)); //100
+console.log(getArea(shape2)); //25
 
 
 //TODO: Refactor the getArea function from above using arrow syntax
