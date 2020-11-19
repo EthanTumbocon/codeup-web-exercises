@@ -5,7 +5,8 @@
     $(document).ready(function () {
         $.get("http://api.openweathermap.org/data/2.5/forecast", {
             APPID: OPEN_WEATHER_APPID,
-            q: "San Antonio, US"
+            q: "San Antonio, US",
+            units: 'imperial'
         }).done(function (data) {
             console.log(data);
         });
@@ -14,6 +15,45 @@
             q: "San Antonio, US"
         }).done(function (data) {
             console.log(data);
+            var html =``
+            forEach(){
+
+            }
+             html += `
+                    <div id="weather-cards">
+                            <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                            <h5 class="current-date"></h5>
+                            <p class="name"> ${data.name} </p>
+                            </div>
+                             <ul class="list-group list-group-flush">
+                                 <li id="weather-type" class="list-group-item"></li>
+                                 <li id="temperature" class="list-group-item"></li>
+                                <li id="humidity" class="list-group-item"></li>
+                                </ul>
+                            </div>
+                       </div>`
+
+        //      html += `
+        // // <div id="weather-cards">
+        // //         <div class="card" style="width: 18rem;">
+        // //         <div class="card-body">
+        // //         <h5 class="current-date"></h5>
+        // //         <p class="name"> ${data.name} </p>
+        // //         </div>
+        // //          <ul class="list-group list-group-flush">
+        // //              <li id="weather-type" class="list-group-item"></li>
+        // //              <li id="temperature" class="list-group-item"></li>
+        // //             <li id="humidity" class="list-group-item"></li>
+        // //             </ul>
+        // //         </div>
+        // //    </div>`
+            $('#weather-card').html(html)
+
+
+
+
+
         });
 
         mapboxgl.accessToken = mapboxToken;
