@@ -189,7 +189,7 @@ const oneLine = lyrics.reduce((currentString, word) => `${currentString} ${word}
 
 console.log(oneLine)
 // Bonus: Create an Array of all the unique fur colors! Hint: check out the ES6 'Set' data type.
-//transform a set into an array: array.from(insertYourSetHere)
+//transform a set into an array: array.from(insertYourSetHere)"git
 var hamsters = [
     {
         name: "Hamtaro",
