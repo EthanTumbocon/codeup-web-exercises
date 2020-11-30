@@ -28,7 +28,7 @@
 
                 var html = ``
                 html += `
-                    <div id="weather-cards">
+                    <div id="weather-cards" 
                            <div class="card" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="current-date"></h5>
@@ -43,6 +43,54 @@
                      </div>`
                 $('#weather-card').html(html)
                 var dayNum = x;
+                html += `
+                    <div id="weather-cards">
+                           <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="current-date"></h5>
+                                <p class="name"> ${data.list[dayNum].dt_txt} </p>
+                           </div>
+                                <ul class="list-group list-group-flush">
+                                     <li id="weather-type" class="list-group-item">${data.list[dayNum].weather[0].description}</li>
+                                     <li id="temperature" class="list-group-item">${data.list[dayNum].main.temp + " °F" }</li>
+                                     <li id="humidity" class="list-group-item"> Humidity:  ${data.list[dayNum].main.humidity + " %"}</li>
+                                </ul>
+                            </div>
+                     </div>`
+                $('#weather-card').html(html)
+                html += `
+                    <div id="weather-cards">
+                           <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="current-date"></h5>
+                                <p class="name"> ${data.list[dayNum].dt_txt} </p>
+                           </div>
+                                <ul class="list-group list-group-flush">
+                                     <li id="weather-type" class="list-group-item">${data.list[dayNum].weather[0].description}</li>
+                                     <li id="temperature" class="list-group-item">${data.list[dayNum].main.temp + " °F" }</li>
+                                     <li id="humidity" class="list-group-item"> Humidity:  ${data.list[dayNum].main.humidity + " %"}</li>
+                                </ul>
+                            </div>
+                     </div>`
+                $('#weather-card').html(html)
+                html += `
+                    <div id="weather-cards">
+                           <div class="card"  style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="current-date"></h5>
+                                <p class="name"> ${data.list[dayNum].dt_txt} </p>
+                           </div>
+                                <ul class="list-group list-group-flush">
+                                     <li id="weather-type" class="list-group-item">${data.list[dayNum].weather[0].description}</li>
+                                     <li id="temperature" class="list-group-item">${data.list[dayNum].main.temp + " °F" }</li>
+                                     <li id="humidity" class="list-group-item"> Humidity:  ${data.list[dayNum].main.humidity + " %"}</li>
+                                </ul>
+                            </div>
+                            </div>
+                            </div>
+                </div>`
+                $('#weather-card').html(html)
+
             }
 
 

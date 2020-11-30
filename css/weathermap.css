@@ -1,0 +1,20 @@
+*{
+
+}
+
+#weather-card{
+    display: inline-flex;
+    align-items: center;
+}
+#weather-cards{
+    margin: 20px;
+}
+
+.search-bar{
+    margin: 10px;
+}
+.mapboxgl-canvas{
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
